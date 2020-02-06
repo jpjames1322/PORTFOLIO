@@ -1,0 +1,232 @@
+<html> 
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Seymour+One&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="prism-atom-dark.css"
+			type="text/css"
+			media="screen"
+			/>
+
+			<script type="text/javascript" src="prism.js"></script>
+			<script type="text/javascript" src="prism.ruby.js"></script>
+<title>Jared Phillips</title> 
+<meta name="description" content="Jared Phillips is a professional software engineer specializing in full-stack development. He has extensive experience with Ruby, Rails, JavaScript, and building web applications.">
+		</head>
+    
+
+	<body>
+		<div class="about-container">
+			<ul>
+			<li><a href="#" class="nav-link">ABOUT</a></li>
+			 <li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+			 <li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+			<li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+			<li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+			  </ul>
+
+
+			<div class="about">
+				<img src="me.jpeg" class="me" />
+
+				<h1>Jared Phillips</h1>
+
+				<h2>Web developer</h2>
+
+				<hr class="grey"/>
+				<p class="bio">
+				Jared is a student at Vanderbilt studying coding and software development. He joined a program to help his developing skills to design, modify, and form the layout to function and create visually appealing websites that are user friendly.
+				</p>
+			</div> 
+      <br />
+		</div>
+		<h3 id="code-samples">Code Snippets</h3>
+		<hr class="yellow"> 
+
+		<div class="box">
+			<h4>Temperature conversion</h4>
+
+			<p>
+				This ruby program will prompt the user for a temperature in degrees celsiues and let the user know what the corresponding temperature is in fahrenheit.
+			</p>
+		</div>
+
+		<div class="box">
+			<pre><code class="language-ruby">
+  n = 0
+	puts &quot;Hello. Please enter a celsius value: &quot;
+		celsius = gets 
+		  fahrenheit = (celsius.to_i * 9 / 5) + 32
+	puts &quot;The fahrenheit equivalent is: &quot;
+	puts fahrenheit
+	puts &quot;.&quot;
+	puts &quot;goodbye&quot;</code></pre>
+		</div>
+
+		<br class="clear" />
+
+		<div class="box"> 
+			<pre><code class="language-ruby">
+n = 0
+	puts &quot;enter a number&quot;
+  i = gets.chomp.to_i
+  def ordinal(n)
+    last_number = n % 100 
+      case
+      when last_number == 1 &amp;&amp; n != 11 then return &quot;st&quot;
+      when last_number == 2 &amp;&amp; n != 12 then return &quot;nd&quot;
+      when last_number == 3 &amp;&amp; n != 13 then return &quot;rd&quot;
+    else &quot;th&quot;
+  end
+end
+puts &quot;that's the #{i}#{ordinal(i)} number!&quot;
+puts &quot;goodbye&quot;</code></pre>
+	</div>
+
+	<div class="box">
+  <h4>Ordinal challenge</h4>
+  <p>
+  	This ruby program will convert a plain number
+        to the ordinal of the number. So for example,
+        if the user enters 2, it will display 2nd, if
+        the user enters 3, it will display 3rd, etc.
+    </p>
+</div>
+
+<br class="clear" />
+<div class="box">
+  <h4>Foobar</h4>
+  <p>
+  	This Ruby program is an adaptation of a classic technical interview problem which displays sequences of the Foobar pattern.
+  </p>
+</div>
+
+<div class="box">
+	<pre><code class="language-ruby">
+n = 0
+puts &quot;how many items do you want to see?&quot;
+  items = gets.chomp.to_i
+  list = []
+    (1..items).each do |n|
+  if n % 3 == 0 &amp;&amp; n % 5 == 0 
+    list &lt;&lt; &quot;foobar&quot;
+  elsif n % 3 == 0 
+    list &lt;&lt; &quot;foo&quot;
+  elsif n % 5 == 0 
+    list &lt;&lt; &quot;bar&quot;
+  else
+    list &lt;&lt; n 
+  end 
+end 
+puts list
+puts &quot;goodbye&quot;</code></pre>
+</div>
+
+<br class="clear" />
+<h3 id="web-apps">Web Apps</h3>
+<hr class="yellow" />
+<div class="box">
+	<h4>quote generator</h4>
+  <a href="https://splurty-jared-phillips.herokuapp.com">
+	 <img src="splurty.png" class="full-width" />
+   take a closer look
+  </a>
+	<p>
+		a data base-powered quote generator with mobile-first desgin, using the ruby onb rails framework, html, and css. user Git and GitHub for version control, and launched on heroku.
+	</p>
+</div>
+ <div class="box">
+      <h4>Yelp Clone</h4>
+      <a href="https://nomster-jared-phillips.herokuapp.com">
+        <img src="nomster.png" class="full-width" />
+        take a closer look
+      </a>
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>
+    </div>
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <a href="https://flixter-jared-phillips.herokuapp.com">
+      <img src="flixter.png" class="full-width" />
+      take a closer look
+      </a>
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <a href="https://grammable-jared-phillips.herokuapp.com">
+        <img src="grammable.png" class="full-width" />
+        take a closer look
+      </a>
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <a href="https://todoster-jared-phillips.herokuapp.com">
+        <img src="todoster.png" class="full-width" />
+        take a closer look
+      </a>
+      <p>
+        This single-page to-do application features a
+        fluid user interface that- by using JavaScript-
+        allows users to rapidly add dynamic content.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Agile Team Project</h4>
+      <img src="chess.png" class="full-width" />
+      <p>
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+      </p>
+    </div>
+    <br class="clear" />
+    <h3 id="skills-and-tools">skills &amp; tools</h3>
+    <hr class="yellow" />
+    <p class="skills-and-tools">
+    	  Jared has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools.
+  </p>
+  <div class="icons">
+  <img src="github.png" class="icon" />
+  <img src="rubocop.png" class="icon" />
+  <img src="trello.png" class="icon" />
+  <img src="slack.png" class="icon" />
+  <img src="codeship.png" class="icon" />
+
+  <br class="clear" />
+  <img src="skills.png" class="icon" /> 
+</div>
+<div class="contact-me" id="hire-me">
+	<h3 class="contact-headline">contact</h3>
+	<hr class="yellow" />
+	<p class="contact-info">
+		currently entertaining new opportunities please get in touch via email:
+	</p>
+	<p>
+		<a href="mailto:jp.james0927@gmail.com" class="contact-link">
+			jp.james0927@gmail.com
+		</a>
+	</div>
+	</body>
+
+</html>
